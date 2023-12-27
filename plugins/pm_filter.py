@@ -1504,10 +1504,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url=GRP_LNK),
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', callback_data='owner_info')            
-        ],[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url=GRP_LNK)
         ]]
         await client.edit_message_media(
             query.message.chat.id, 

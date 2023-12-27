@@ -23,10 +23,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=GRP_LNK) 
-                  ],[
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=GRP_LNK)
+                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -44,12 +41,12 @@ async def start(client, message):
         buttons = [[                    
                     InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')                    
                 ],[
-                    InlineKeyboardButton(' Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ', callback_data="dicl_btn")
+                    InlineKeyboardButton(' Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                 ],[
-                    InlineKeyboardButton(' Mᴏᴠɪᴇ Gʀᴏᴜᴘ', callback_data="dicl_btn")
+                    InlineKeyboardButton(' Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'), 
-                    InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='filters')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)        

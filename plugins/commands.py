@@ -45,8 +45,8 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton(' Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'), 
-                    InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='filters')
+                    InlineKeyboardButton('Hᴇʟᴘ', callback_data='filters'), 
+                    InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)        

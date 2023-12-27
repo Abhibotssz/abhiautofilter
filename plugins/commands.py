@@ -91,10 +91,14 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[                    
-                    InlineKeyboardButton('⚠️ Hᴇʟᴘ', callback_data='extra'),
-                    InlineKeyboardButton('🔰 Aʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')                    
                 ],[
-                    InlineKeyboardButton('‼️ Dɪsᴄʟᴀɪᴍᴇʀ ‼️', callback_data="dicl_btn")
+                    InlineKeyboardButton(' Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ', callback_data="dicl_btn")
+                ],[
+                    InlineKeyboardButton(' Mᴏᴠɪᴇ Gʀᴏᴜᴘ', callback_data="dicl_btn")
+                ],[
+                    InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'), 
+                    InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -305,7 +309,8 @@ async def start(client, message):
                 f_caption = f"{' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1.file_name.split()))}"
             if not await check_verification(client, message.from_user.id) and VERIFY == True:
                 btn = [[
-                        InlineKeyboardButton("♻️ Vᴇʀɪғʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
+                        InlineKeyboardButton("♻️ Vᴇʀɪғʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                     ],[
                         InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url=HOW_TO_VERIFY)
                         ]]
                 await message.reply_photo(
@@ -369,7 +374,8 @@ async def start(client, message):
         try:
             if not await check_verification(client, message.from_user.id) and VERIFY == True:
                 btn = [[
-                    InlineKeyboardButton("♻️ Vᴇʀɪғʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
+                    InlineKeyboardButton("♻️ Vᴇʀɪғʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                 ],[
                     InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url=HOW_TO_VERIFY)
                 ]]
                 await message.reply_photo(
@@ -430,7 +436,8 @@ async def start(client, message):
         f_caption = f"  {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"
     if not await check_verification(client, message.from_user.id) and VERIFY == True:
         btn = [[
-                InlineKeyboardButton("♻️ Vᴇʀɪғʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
+                InlineKeyboardButton("♻️ Vᴇʀɪғʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+             ],[
                 InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url=HOW_TO_VERIFY)
                 ]]
         await message.reply_photo(

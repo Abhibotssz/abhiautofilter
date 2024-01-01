@@ -1,5 +1,5 @@
 {
-    "name": "THALAPATHY-FILTER-BOT",
+    "name": "THALAPATHY-FILTE",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -75,7 +75,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "eco"
+            "size": "free"
         }
     }
 }

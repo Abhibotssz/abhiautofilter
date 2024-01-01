@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Souravmkv/AutoFilerAdv",
-    "repository": "https://github.com/Souravmkv/AutoFilerAdv",
+    "website": "https://github.com/Abhibotssz/abhiautofilter",
+    "repository": "https://github.com/Abhibotssz/abhiautofilter",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
